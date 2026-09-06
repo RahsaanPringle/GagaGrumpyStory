@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ruby, Riley & the Hungry Chickens</title>
+  <style>
+    :root {
+      --ink: #382b27;
+      --paper: #fffdf7;
+      --teal: #287a78;
+      --red: #c95743;
+      --gold: #e6ae37;
+      --green: #548b46
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: "Trebuchet MS", "Arial Rounded MT Bold", sans-serif;
+      background: #edc882
+    }
+
+    button {
+      font: inherit
+    }
+
+    .book {
+      width: 100%;
+      margin: 0;
+      background: var(--paper);
+      overflow: hidden
+    }
+
+    header {
+      padding: 25px 24px 18px;
+      text-align: center;
+      background: #fff8dc
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--teal);
+      font-size: clamp(2rem, 5.8vw, 4.6rem);
+      line-height: .96;
+      text-shadow: 2px 2px white
+    }
+
+    header p {
+      margin: .7rem 0 0;
+      color: #765044;
+      font-size: 1.12rem
+    }
+
+    .page {
+      display: none;
+      animation: turn .35s ease
+    }
+
+    .page.active {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(360px, 2fr);
+      align-items: start
+    }
+
+    .scene {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      aspect-ratio: 9/4;
+      align-self: start;
+      background: #dce8d1
+    }
+
+    .scene img {
+      position: absolute;
+      display: block;
+      width: 200%;
+      max-width: none;
+      height: auto;
+      left: var(--x, 0);
+      top: var(--y, 0)
+    }
+
+    .s1 {
+      --x: 0;
+      --y: 0
+    }
+
+    .s2 {
+      --x: -100%;
+      --y: 0
+    }
+
+    .s3 {
+      --x: 0;
+      --y: -100%
+    }
+
+    .s4 {
+      --x: -100%;
+      --y: -100%
+    }
+
+    .s5 {
+      --x: 0;
+      --y: -200%
+    }
+
+    .s6 {
+      --x: -100%;
+      --y: -200%
+    }
+
+    .image-error {
+      display: none;
+      position: absolute;
+      inset: 0;
+      padding: 24px;
+      place-items: center;
+      text-align: center;
+      background: #fff0dc;
+      color: #8f3528;
+      font-weight: bold
+    }
+
+    .scene.broken .image-error {
+      display: grid
+    }
+
+    .scene.broken img {
+      display: none
+    }
+
+    .words {
+      padding: clamp(26px, 5vw, 58px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(135deg, #fffdf8, #fff5d8)
+    }
+
+    h2 {
+      margin: 0 0 1rem;
+      color: var(--red);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.06
+    }
+
+    .words p {
+      margin: .42rem 0;
+      font-family: Georgia, serif;
+      font-size: clamp(1.12rem, 2.05vw, 1.48rem);
+      line-height: 1.58
+    }
+
+    .sound {
+      font-family: inherit !important;
+      font-size: 1.43em !important;
+      font-weight: 900;
+      color: var(--teal);
+      letter-spacing: .04em
+    }
+
+    .lesson {
+      margin: .75rem 0 !important;
+      padding: 13px 17px;
+      border-left: 7px solid var(--gold);
+      border-radius: 8px;
+      background: #fff1bd;
+      font-family: inherit !important
+    }
+
+    .lesson strong {
+      color: #915700;
+      font-size: 1.2em
+    }
+
+    .rule {
+      padding: 13px 18px;
+      border-radius: 12px;
+      background: #e3f2d9;
+      color: #315f29;
+      font-family: inherit !important;
+      font-size: 1.35em !important;
+      font-weight: bold;
+      text-align: center
+    }
+
+    .ending {
+      font-weight: bold;
+      color: var(--red)
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 18px;
+      background: #fff8dc;
+      border-top: 2px dashed #e8c77e
+    }
+
+    .controls button {
+      border: 0;
+      border-radius: 999px;
+      padding: 11px 20px;
+      background: var(--teal);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px #175452
+    }
+
+    .controls button:hover {
+      transform: translateY(-1px)
+    }
+
+    .controls button:disabled {
+      opacity: .35;
+      cursor: not-allowed;
+      transform: none
+    }
+
+    .controls .all {
+      background: var(--red);
+      box-shadow: 0 4px #8f3528
+    }
+
+    .count {
+      min-width: 88px;
+      text-align: center;
+      font-weight: bold;
+      color: #765044
+    }
+
+    footer {
+      text-align: center;
+      padding: 0 16px 20px;
+      background: #fff8dc;
+      color: #765044;
+      font-size: .9rem
+    }
+
+    @keyframes turn {
+      from {
+        opacity: 0;
+        transform: translateX(12px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    body.read-all .page {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(360px, 2fr);
+      align-items: start;
+      break-inside: avoid;
+      border-top: 8px solid #f7e5b7
+    }
+
+    body.read-all .controls {
+      position: sticky;
+      bottom: 0;
+      z-index: 5
+    }
+
+    body.read-all #prev,
+    body.read-all #next,
+    body.read-all .count {
+      display: none
+    }
+
+    @media(max-width:800px) {
+
+      .page.active,
+      body.read-all .page {
+        grid-template-columns: 1fr
+      }
+
+      .scene {
+        aspect-ratio: 9/4
+      }
+
+      .words {
+        min-height: 350px
+      }
+
+      .controls {
+        flex-wrap: wrap
+      }
+    }
+
+    @media print {
+      body {
+        background: white
+      }
+
+      .book {
+        width: 100%
+      }
+
+      header,
+      .controls,
+      footer {
+        display: none !important
+      }
+
+      .page,
+      body.read-all .page {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        min-height: 100vh;
+        break-after: page
+      }
+
+      .scene {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact
+      }
+
+      .words {
+        padding: 40px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="book">
+    <header>
+      <h1>Ruby, Riley &amp;<br>the Hungry Chickens</h1>
+      <p>A story about hungry hens, helpful dogs, and bugs in the right place.</p>
+    </header>
+
+    <section class="page active">
+      <div class="scene s1" role="img"
+        aria-label="Gaga discovers her chickens trampling through the garden while Ruby and Riley watch"><img
+          src="Ruby-Riley-Hungry-Chickens-Art.png?v=1" alt="" onerror="this.parentElement.classList.add('broken')"><span
+          class="image-error">The illustration could not be loaded.<br>Expected:
+          Ruby-Riley-Hungry-Chickens-Art.png</span></div>
+      <div class="words">
+        <h2>Something in the Garden</h2>
+        <p>Gaga grew lettuce, tomatoes, beans, and bright yellow flowers in her garden.</p>
+        <p>One morning, she heard a suspicious sound among the vegetables.</p>
+        <p class="sound">Scratch-scratch! Cluck-cluck!</p>
+        <p>There were Gaga’s chickens—stepping on lettuce, bumping the beans, and kicking dirt over everything.</p>
+        <p>Riley stared. Little Ruby stared.</p>
+        <p>Gaga stared hardest of all.</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="scene s2" role="img"
+        aria-label="Goldie and the chickens search for bugs among the garden vegetables while the dogs listen"><img
+          src="Ruby-Riley-Hungry-Chickens-Art.png?v=1" alt="" onerror="this.parentElement.classList.add('broken')"><span
+          class="image-error">The illustration could not be loaded.<br>Expected:
+          Ruby-Riley-Hungry-Chickens-Art.png</span></div>
+      <div class="words">
+        <h2>¡Bichos!</h2>
+        <p>Riley stepped to the garden gate.</p>
+        <p>“Goldie, what are you doing in Gaga’s vegetables?” she asked.</p>
+        <p>Goldie scratched beneath a leaf and found a wiggly worm.</p>
+        <p class="sound">“¡Bichos!”</p>
+        <p>The other chickens clucked together.</p>
+        <p class="sound">“¡Sí! ¡Bichos!”</p>
+        <p>Ruby blinked. “What did they say?”</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="scene s3" role="img"
+        aria-label="Riley explains the chickens are hunting bugs while Ruby listens and Gaga repairs a plant"><img
+          src="Ruby-Riley-Hungry-Chickens-Art.png?v=1" alt="" onerror="this.parentElement.classList.add('broken')"><span
+          class="image-error">The illustration could not be loaded.<br>Expected:
+          Ruby-Riley-Hungry-Chickens-Art.png</span></div>
+      <div class="words">
+        <h2>Riley Translates</h2>
+        <p>“They are looking for bugs to eat,” Riley explained.</p>
+        <p class="lesson"><strong>Bichos</strong> means <strong>bugs</strong>.<br><strong>Sí</strong> means
+          <strong>yes</strong>.</p>
+        <p>Ruby looked at the bent lettuce. “But the bugs are hiding in Gaga’s garden.”</p>
+        <p>Riley nodded.</p>
+        <p class="lesson"><strong>Jardín</strong> means <strong>garden</strong>.</p>
+        <p>“The chickens may like the <em>jardín</em>,” Riley said, “but Gaga’s vegetables do not like chicken feet.”
+        </p>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="scene s4" role="img"
+        aria-label="Riley and Ruby gently guide the chickens out through the garden gate"><img
+          src="Ruby-Riley-Hungry-Chickens-Art.png?v=1" alt="" onerror="this.parentElement.classList.add('broken')"><span
+          class="image-error">The illustration could not be loaded.<br>Expected:
+          Ruby-Riley-Hungry-Chickens-Art.png</span></div>
+      <div class="words">
+        <h2>Everybody Out!</h2>
+        <p>Riley walked slowly behind the chickens.</p>
+        <p>Ruby hurried to the other side of the gate.</p>
+        <p>“This way, Goldie,” said Riley.</p>
+        <p>“Not that way,” said Ruby.</p>
+        <p>The hens waddled, flapped, and clucked toward the opening.</p>
+        <p class="sound">Paso, paso, paso!</p>
+        <p class="lesson"><strong>Paso</strong> means <strong>step</strong>.</p>
+        <p>Soon, ten chicken feet had stepped safely out of the garden.</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="scene s5" role="img"
+        aria-label="Ruby finds bugs beneath a leaf and log in the yard for Goldie and the chickens"><img
+          src="Ruby-Riley-Hungry-Chickens-Art.png?v=1" alt="" onerror="this.parentElement.classList.add('broken')"><span
+          class="image-error">The illustration could not be loaded.<br>Expected:
+          Ruby-Riley-Hungry-Chickens-Art.png</span></div>
+      <div class="words">
+        <h2>Ruby’s Better Place</h2>
+        <p>Ruby sniffed beside an old log in the grass.</p>
+        <p>She lifted a big leaf with her nose.</p>
+        <p>Underneath were a beetle, a cricket, and one fat worm.</p>
+        <p>Goldie’s eyes grew wide.</p>
+        <p>“You can look for bugs here,” Ruby told the flock. “The yard has plenty!”</p>
+        <p class="rule">¡Bichos en el patio!</p>
+        <p class="lesson"><strong>Patio</strong> means <strong>yard</strong>.<br><strong>Bichos en el patio</strong>
+          means <strong>bugs in the yard</strong>.</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="scene s6" role="img"
+        aria-label="The chickens hunt bugs in the yard while Ruby, Riley, Gaga, and Arlo relax nearby"><img
+          src="Ruby-Riley-Hungry-Chickens-Art.png?v=1" alt="" onerror="this.parentElement.classList.add('broken')"><span
+          class="image-error">The illustration could not be loaded.<br>Expected:
+          Ruby-Riley-Hungry-Chickens-Art.png</span></div>
+      <div class="words">
+        <h2>Everyone’s Happy Place</h2>
+        <p>The chickens scratched through the soft grass.</p>
+        <p>They found beetles beneath leaves and worms near the old log.</p>
+        <p>Gaga’s vegetables stood safely behind the garden gate.</p>
+        <p>Riley rested beside Ruby while Gaga showed Arlo the garden.</p>
+        <p>Goldie clucked, “¡Gracias, amigas!”</p>
+        <p class="lesson"><strong>Gracias</strong> means <strong>thank you</strong>.<br><strong>Amigas</strong> means
+          <strong>female friends</strong>.</p>
+        <p class="ending">The chickens had their bichos. Gaga had her jardín. And Ruby and Riley had done a very good
+          job.</p>
+      </div>
+    </section>
+
+    <nav class="controls" aria-label="Story controls"><button id="prev" type="button">← Back</button><span class="count"
+        aria-live="polite">Page 1 of 6</span><button id="next" type="button">Next →</button><button class="all" id="all"
+        type="button">Read all pages</button></nav>
+    <footer>Made with love for Arlo, Ruby, Riley, Gaga, Goldie—and five hungry amigas.</footer>
+  </main>
+  <script>
+    const pages = [...document.querySelectorAll('.page')], count = document.querySelector('.count'); let current = 0;
+    function show(n) { current = Math.max(0, Math.min(n, pages.length - 1)); pages.forEach((p, i) => p.classList.toggle('active', i === current)); count.textContent = `Page ${current + 1} of ${pages.length}`; prev.disabled = current === 0; next.disabled = current === pages.length - 1; window.scrollTo({ top: 0, behavior: 'smooth' }) }
+    prev.onclick = () => show(current - 1); next.onclick = () => show(current + 1); all.onclick = () => { document.body.classList.toggle('read-all'); const on = document.body.classList.contains('read-all'); all.textContent = on ? 'Page-turn view' : 'Read all pages'; if (!on) show(current) }; document.addEventListener('keydown', e => { if (document.body.classList.contains('read-all')) return; if (e.key === 'ArrowRight') show(current + 1); if (e.key === 'ArrowLeft') show(current - 1) }); show(0);
+  </script>
+</body>
+
+</html>
