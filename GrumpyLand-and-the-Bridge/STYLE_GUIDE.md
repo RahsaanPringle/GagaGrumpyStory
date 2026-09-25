@@ -8,6 +8,7 @@
 - **Color:** bright sky blue, vivid green, honey wood, teal, yellow, and warm stone
 - **Lighting:** strong sunny daylight with polished highlights and clear cast shadows
 - **Characters:** highly animated cartoon figures with large eyes and energetic poses
+- **Arlo's approximate age:** about 6 years old; an early school-age child trusted with simple responsibilities but still learning when to ask an adult
 - **Backgrounds:** expansive rural landscapes with detailed water, bridges, flowers, gates, stonework, and distant hills
 - **Composition:** separate 16:9 landscape images; wide establishing shots mixed with action-focused scenes
 - **Mood:** adventurous, energetic, humorous, and instructive
@@ -15,7 +16,7 @@
 
 ## Direction for new artwork
 
-Use the shared watercolor-and-ink series style, the canonical characters in `../Characters/`, and the property layout in `../Scenes/Terrain-Storybook.png`. Grumpy wears his orange sweater and olive pants; Arlo has copper-red hair and his striped shirt; Riley and Ruby are German Shepherds with green and red collars. Bob matches `../Characters/Bob-the-Biker.png`.
+Use the shared watercolor-and-ink series style, the canonical characters in `../Characters/`, and the property layout in `../Scenes/Terrain-Storybook.png`. Draw Arlo at about age 6 with early school-age proportions: longer limbs and a little more height than in the preschool stories, while keeping his recognizable face and hair. Grumpy wears his orange sweater and olive pants; Arlo has copper-red hair and his striped shirt; Riley and Ruby are German Shepherds with green and red collars. Bob matches `../Characters/Bob-the-Biker.png`.
 
 Keep the private footbridge, public road bridge, stream, wooden gate, fences, and rural paths visually distinct. Use separate 16:9 landscape images rather than a sprite sheet.
 
