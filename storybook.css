@@ -1,0 +1,279 @@
+:root {
+  --ink: #382b27;
+  --paper: #fffdf7;
+  --teal: #287a78;
+  --red: #c95743;
+  --gold: #e6ae37;
+  --green: #548b46;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: "Trebuchet MS", "Arial Rounded MT Bold", sans-serif;
+  background: #edc882;
+}
+
+body[data-story="dog-tired"] {
+  --gold: #efbd55;
+  background: radial-gradient(circle at top, #fff7d5, #efc986 70%, #dba66f);
+}
+
+body[data-story="gaga-went-away"] {
+  --red: #b95648;
+  --gold: #e2ad45;
+  --green: #5e8a52;
+  background: #d8b773;
+}
+
+body[data-story="yard-boat"] { --gold: #efbd55; --blue: #4f96a9; }
+
+button { font: inherit; }
+
+.book {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+.book > header {
+  padding: 25px 24px 18px;
+  text-align: center;
+  background: #fff8dc;
+}
+
+.book h1 {
+  margin: 0;
+  color: var(--teal);
+  font-size: clamp(2rem, 5.8vw, 4.6rem);
+  line-height: .96;
+  text-shadow: 2px 2px white;
+}
+
+body[data-story="dog-tired"] .book h1 { font-size: clamp(2rem, 6vw, 4.5rem); line-height: .95; }
+body[data-story="gaga-went-away"] .book h1 { font-size: clamp(2.4rem, 6vw, 5rem); }
+body[data-story="golden-egg"] .book h1 { font-size: clamp(2.1rem, 6vw, 4.7rem); }
+body[data-story="yard-boat"] .book h1 { font-size: clamp(2.2rem, 6vw, 4.8rem); line-height: .95; }
+
+.book > header p {
+  margin: .7rem 0 0;
+  color: #765044;
+  font-size: 1.12rem;
+}
+
+.page {
+  display: none;
+  animation: turn .35s ease;
+}
+
+.page.active {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(360px, 2fr);
+  align-items: start;
+}
+
+.scene {
+  position: relative;
+  align-self: start;
+  width: 100%;
+  aspect-ratio: 9 / 4;
+  overflow: hidden;
+  background: #dce8d1;
+}
+
+body[data-story="dog-tired"] .scene { min-height: 0; background: #ead7b3; }
+
+.scene img {
+  position: absolute;
+  left: var(--x, 0);
+  top: var(--y, 0);
+  display: block;
+  width: 200%;
+  max-width: none;
+  height: auto;
+}
+
+.s1 { --x: 0; --y: 0; }
+.s2 { --x: -100%; --y: 0; }
+.s3 { --x: 0; --y: -100%; }
+.s4 { --x: -100%; --y: -100%; }
+.s5 { --x: 0; --y: -200%; }
+.s6 { --x: -100%; --y: -200%; }
+
+.image-error {
+  position: absolute;
+  inset: 0;
+  display: none;
+  padding: 24px;
+  place-items: center;
+  text-align: center;
+  background: #fff0dc;
+  color: #8f3528;
+  font-weight: bold;
+}
+
+.scene.broken .image-error { display: grid; }
+.scene.broken img { display: none; }
+
+.words {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(26px, 5vw, 58px);
+  background: linear-gradient(135deg, #fffdf8, #fff5d8);
+}
+
+body[data-story="gaga-went-away"] .words { background: linear-gradient(135deg, #fffdf8, #fff4d7); }
+
+.words h2 {
+  margin: 0 0 1rem;
+  color: var(--red);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.06;
+}
+
+.words p {
+  margin: .42rem 0;
+  font-family: Georgia, serif;
+  font-size: clamp(1.12rem, 2.05vw, 1.48rem);
+  line-height: 1.58;
+}
+
+body[data-story="dog-tired"] .words p {
+  margin: .45rem 0;
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+  line-height: 1.62;
+}
+
+.sound,
+.refrain {
+  color: var(--teal);
+  font-family: inherit !important;
+  font-size: 1.45em !important;
+  font-weight: 900;
+  letter-spacing: .04em;
+}
+
+.refrain { font-size: 1.33em !important; letter-spacing: normal; }
+body[data-story="dog-tired"] .sound { font-size: 1.55em !important; }
+body[data-story="yard-boat"] .sound { font-size: 1.5em !important; }
+
+.lesson,
+.spanish,
+.truth {
+  margin: .75rem 0 !important;
+  padding: 13px 17px;
+  border-left: 7px solid var(--gold);
+  border-radius: 8px;
+  background: #fff1bd;
+  font-family: inherit !important;
+}
+
+.lesson strong { color: #915700; font-size: 1.2em; }
+
+.heart,
+.rule {
+  padding: 13px 18px;
+  border-radius: 12px;
+  background: #e3f2d9;
+  color: #315f29;
+  font-family: inherit !important;
+  font-size: 1.25em !important;
+  font-weight: bold;
+  text-align: center;
+}
+
+.rule { font-size: 1.35em !important; }
+.ending, .punch { color: var(--red); font-weight: bold; }
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px;
+  border-top: 2px dashed #e8c77e;
+  background: #fff8dc;
+}
+
+.controls button {
+  border: 0;
+  border-radius: 999px;
+  padding: 11px 20px;
+  background: var(--teal);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px #175452;
+}
+
+.controls button:hover { transform: translateY(-1px); }
+.controls button:disabled { opacity: .35; cursor: not-allowed; transform: none; }
+.controls .all { background: var(--red); box-shadow: 0 4px #8f3528; }
+
+.count {
+  min-width: 88px;
+  color: #765044;
+  font-weight: bold;
+  text-align: center;
+}
+
+.book > footer {
+  padding: 0 16px 20px;
+  background: #fff8dc;
+  color: #765044;
+  font-size: .9rem;
+  text-align: center;
+}
+
+@keyframes turn {
+  from { opacity: 0; transform: translateX(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+body.read-all .page {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(360px, 2fr);
+  align-items: start;
+  border-top: 8px solid #f7e5b7;
+  break-inside: avoid;
+}
+
+body.read-all .controls { position: sticky; bottom: 0; z-index: 5; }
+body.read-all #prev,
+body.read-all #next,
+body.read-all .count { display: none; }
+
+@media (max-width: 800px) {
+  .page.active,
+  body.read-all .page { grid-template-columns: 1fr; }
+  .scene { aspect-ratio: 9 / 4; }
+  .words { min-height: 350px; }
+  .controls { flex-wrap: wrap; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page { animation: none; }
+}
+
+@media print {
+  body { background: white; }
+  .book { width: 100%; }
+  .book > header,
+  .controls,
+  .book > footer { display: none !important; }
+  .page,
+  body.read-all .page {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    min-height: 100vh;
+    break-after: page;
+  }
+  .scene { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .words { padding: 40px; }
+}

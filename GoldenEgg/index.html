@@ -6,328 +6,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Ruby, Riley & Goldie's Egg</title>
   <link rel="stylesheet" href="../site-nav.css">
-  <style>
-    :root {
-      --ink: #382b27;
-      --paper: #fffdf7;
-      --teal: #287a78;
-      --red: #c95743;
-      --gold: #e6ae37
-    }
-
-    * {
-      box-sizing: border-box
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      color: var(--ink);
-      font-family: "Trebuchet MS", "Arial Rounded MT Bold", sans-serif;
-      background: #edc882
-    }
-
-    button {
-      font: inherit
-    }
-
-    .book {
-      width: 100%;
-      margin: 0;
-      background: var(--paper);
-      overflow: hidden
-    }
-
-    header {
-      padding: 25px 24px 18px;
-      text-align: center;
-      background: #fff8dc
-    }
-
-    h1 {
-      margin: 0;
-      color: var(--teal);
-      font-size: clamp(2.1rem, 6vw, 4.7rem);
-      line-height: .96;
-      text-shadow: 2px 2px white
-    }
-
-    header p {
-      margin: .7rem 0 0;
-      color: #765044;
-      font-size: 1.12rem
-    }
-
-    .page {
-      display: none;
-      animation: turn .35s ease
-    }
-
-    .page.active {
-      display: grid;
-      grid-template-columns: minmax(0, 3fr) minmax(360px, 2fr);
-      align-items: start
-    }
-
-    .scene {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      aspect-ratio: 9/4;
-      align-self: start;
-      background: #dce8d1
-    }
-
-    .scene img {
-      position: absolute;
-      display: block;
-      width: 200%;
-      max-width: none;
-      height: auto;
-      left: var(--x, 0);
-      top: var(--y, 0)
-    }
-
-    .s1 {
-      --x: 0;
-      --y: 0
-    }
-
-    .s2 {
-      --x: -100%;
-      --y: 0
-    }
-
-    .s3 {
-      --x: 0;
-      --y: -100%
-    }
-
-    .s4 {
-      --x: -100%;
-      --y: -100%
-    }
-
-    .s5 {
-      --x: 0;
-      --y: -200%
-    }
-
-    .s6 {
-      --x: -100%;
-      --y: -200%
-    }
-
-    .image-error {
-      display: none;
-      position: absolute;
-      inset: 0;
-      padding: 24px;
-      place-items: center;
-      text-align: center;
-      background: #fff0dc;
-      color: #8f3528;
-      font-weight: bold
-    }
-
-    .scene.broken .image-error {
-      display: grid
-    }
-
-    .scene.broken img {
-      display: none
-    }
-
-    .words {
-      padding: clamp(26px, 5vw, 58px);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background: linear-gradient(135deg, #fffdf8, #fff5d8)
-    }
-
-    h2 {
-      margin: 0 0 1rem;
-      color: var(--red);
-      font-size: clamp(1.8rem, 4vw, 3rem);
-      line-height: 1.06
-    }
-
-    .words p {
-      margin: .42rem 0;
-      font-family: Georgia, serif;
-      font-size: clamp(1.12rem, 2.05vw, 1.48rem);
-      line-height: 1.58
-    }
-
-    .sound {
-      font-family: inherit !important;
-      font-size: 1.45em !important;
-      font-weight: 900;
-      color: var(--teal);
-      letter-spacing: .04em
-    }
-
-    .spanish {
-      margin: .8rem 0 !important;
-      padding: 14px 18px;
-      border-left: 7px solid var(--gold);
-      border-radius: 8px;
-      background: #fff1bd;
-      font-family: inherit !important
-    }
-
-    .spanish strong {
-      color: #9b5b00;
-      font-size: 1.25em
-    }
-
-    .ending {
-      font-weight: bold;
-      color: var(--red)
-    }
-
-    .controls {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      padding: 18px;
-      background: #fff8dc;
-      border-top: 2px dashed #e8c77e
-    }
-
-    .controls button {
-      border: 0;
-      border-radius: 999px;
-      padding: 11px 20px;
-      background: var(--teal);
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      box-shadow: 0 4px #175452
-    }
-
-    .controls button:hover {
-      transform: translateY(-1px)
-    }
-
-    .controls button:disabled {
-      opacity: .35;
-      cursor: not-allowed;
-      transform: none
-    }
-
-    .controls .all {
-      background: var(--red);
-      box-shadow: 0 4px #8f3528
-    }
-
-    .count {
-      min-width: 88px;
-      text-align: center;
-      font-weight: bold;
-      color: #765044
-    }
-
-    footer {
-      text-align: center;
-      padding: 0 16px 20px;
-      background: #fff8dc;
-      color: #765044;
-      font-size: .9rem
-    }
-
-    @keyframes turn {
-      from {
-        opacity: 0;
-        transform: translateX(12px)
-      }
-
-      to {
-        opacity: 1;
-        transform: none
-      }
-    }
-
-    body.read-all .page {
-      display: grid;
-      grid-template-columns: minmax(0, 3fr) minmax(360px, 2fr);
-      align-items: start;
-      break-inside: avoid;
-      border-top: 8px solid #f7e5b7
-    }
-
-    body.read-all .controls {
-      position: sticky;
-      bottom: 0;
-      z-index: 5
-    }
-
-    body.read-all #prev,
-    body.read-all #next,
-    body.read-all .count {
-      display: none
-    }
-
-    @media(max-width:800px) {
-
-      .page.active,
-      body.read-all .page {
-        grid-template-columns: 1fr
-      }
-
-      .scene {
-        aspect-ratio: 9/4
-      }
-
-      .words {
-        min-height: 350px
-      }
-
-      .controls {
-        flex-wrap: wrap
-      }
-    }
-
-    @media print {
-      body {
-        background: white
-      }
-
-      .book {
-        width: 100%
-      }
-
-      header,
-      .controls,
-      footer {
-        display: none !important
-      }
-
-      .page,
-      body.read-all .page {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr;
-        align-items: start;
-        min-height: 100vh;
-        break-after: page
-      }
-
-      .scene {
-        print-color-adjust: exact;
-        -webkit-print-color-adjust: exact
-      }
-
-      .words {
-        padding: 40px
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../storybook.css">
 </head>
 
-<body>
-  <nav class="site-nav" aria-label="Story shelf"><div class="site-nav__inner"><a href="../">⌂ Home</a><a href="../DogTired/">Dog-Tired Day</a><a href="../GoldenEgg/" aria-current="page">Goldie’s Egg</a><a href="../HungryBird/">Hungry Chickens</a><a href="../NoseWork/">Scent of Home</a><a href="../YardBoat/">Yard Boat</a><a href="../GagaWentAway/">Gaga Went Away</a></div></nav>
+<body data-story="golden-egg">
+  <nav class="site-nav" data-current="golden-egg" aria-label="Story shelf"></nav>
   <main class="book">
     <header>
       <h1>Ruby, Riley &amp;<br>Goldie’s Egg</h1>
@@ -337,7 +20,7 @@
     <section class="page active">
       <div class="scene s1" role="img"
         aria-label="Gaga feeds her chickens while Riley watches and little Ruby becomes excited"><img
-          src="Ruby-Riley-Goldie-Art.png?v=1" alt="" onerror="this.parentElement.classList.add('broken')"><span
+          src="Ruby-Riley-Goldie-Art.png?v=1" alt=""><span
           class="image-error">The illustration could not be loaded.<br>Expected: Ruby-Riley-Goldie-Art.png</span></div>
       <div class="words">
         <h2>Gaga’s Chickens</h2>
@@ -352,7 +35,7 @@
 
     <section class="page">
       <div class="scene s2" role="img" aria-label="Little Ruby chases the chickens while Gaga and Riley react"><img
-          src="Ruby-Riley-Goldie-Art.png?v=1" alt="" onerror="this.parentElement.classList.add('broken')"><span
+          src="Ruby-Riley-Goldie-Art.png?v=1" alt=""><span
           class="image-error">The illustration could not be loaded.<br>Expected: Ruby-Riley-Goldie-Art.png</span></div>
       <div class="words">
         <h2>Ruby Runs!</h2>
@@ -368,7 +51,7 @@
 
     <section class="page">
       <div class="scene s3" role="img" aria-label="Riley races after Ruby while Ruby chases the chickens"><img
-          src="Ruby-Riley-Goldie-Art.png?v=1" alt="" onerror="this.parentElement.classList.add('broken')"><span
+          src="Ruby-Riley-Goldie-Art.png?v=1" alt=""><span
           class="image-error">The illustration could not be loaded.<br>Expected: Ruby-Riley-Goldie-Art.png</span></div>
       <div class="words">
         <h2>Riley Runs Too</h2>
@@ -384,7 +67,7 @@
 
     <section class="page">
       <div class="scene s4" role="img" aria-label="Big Riley gently stops little Ruby and protects the chickens"><img
-          src="Ruby-Riley-Goldie-Art.png?v=1" alt="" onerror="this.parentElement.classList.add('broken')"><span
+          src="Ruby-Riley-Goldie-Art.png?v=1" alt=""><span
           class="image-error">The illustration could not be loaded.<br>Expected: Ruby-Riley-Goldie-Art.png</span></div>
       <div class="words">
         <h2>Chickens Are Friends</h2>
@@ -400,7 +83,7 @@
 
     <section class="page">
       <div class="scene s5" role="img" aria-label="Goldie offers Ruby an egg and says amiga while Riley watches"><img
-          src="Ruby-Riley-Goldie-Art.png?v=1" alt="" onerror="this.parentElement.classList.add('broken')"><span
+          src="Ruby-Riley-Goldie-Art.png?v=1" alt=""><span
           class="image-error">The illustration could not be loaded.<br>Expected: Ruby-Riley-Goldie-Art.png</span></div>
       <div class="words">
         <h2>Goldie’s Gift</h2>
@@ -417,7 +100,7 @@
     <section class="page">
       <div class="scene s6" role="img"
         aria-label="Ruby, Riley, Goldie, the chickens, Gaga, and Arlo relax together as friends"><img
-          src="Ruby-Riley-Goldie-Art.png?v=1" alt="" onerror="this.parentElement.classList.add('broken')"><span
+          src="Ruby-Riley-Goldie-Art.png?v=1" alt=""><span
           class="image-error">The illustration could not be loaded.<br>Expected: Ruby-Riley-Goldie-Art.png</span></div>
       <div class="words">
         <h2>Amigas</h2>
@@ -437,11 +120,8 @@
         type="button">Read all pages</button></nav>
     <footer>Made with love for Arlo, Ruby, Riley, Gaga, Goldie—and all their amigas.</footer>
   </main>
-  <script>
-    const pages = [...document.querySelectorAll('.page')], count = document.querySelector('.count'); let current = 0;
-    function show(n) { current = Math.max(0, Math.min(n, pages.length - 1)); pages.forEach((p, i) => p.classList.toggle('active', i === current)); count.textContent = `Page ${current + 1} of ${pages.length}`; prev.disabled = current === 0; next.disabled = current === pages.length - 1; window.scrollTo({ top: 0, behavior: 'smooth' }) }
-    prev.onclick = () => show(current - 1); next.onclick = () => show(current + 1); all.onclick = () => { document.body.classList.toggle('read-all'); const on = document.body.classList.contains('read-all'); all.textContent = on ? 'Page-turn view' : 'Read all pages'; if (!on) show(current) }; document.addEventListener('keydown', e => { if (document.body.classList.contains('read-all')) return; if (e.key === 'ArrowRight') show(current + 1); if (e.key === 'ArrowLeft') show(current - 1) }); show(0);
-  </script>
+  <script src="../site-nav.js" defer></script>
+  <script src="../storybook.js" defer></script>
 </body>
 
 </html>

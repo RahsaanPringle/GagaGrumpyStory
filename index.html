@@ -5,256 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Read the illustrated adventures of Arlo, Ruby, Riley, Gaga, and Grumpy.">
   <title>Gaga &amp; Grumpy's Story Shelf</title>
-  <style>
-    :root {
-      --ink: #302824;
-      --brown: #68462f;
-      --cream: #fffaf0;
-      --paper: #fffef9;
-      --gold: #f1bd55;
-      --teal: #247c78;
-      --teal-dark: #175954;
-      --red: #bd5543;
-      --shadow: 0 14px 35px rgba(73, 46, 28, .14);
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      color: var(--ink);
-      font-family: "Trebuchet MS", "Arial Rounded MT Bold", Arial, sans-serif;
-      background:
-        radial-gradient(circle at 8% 4%, rgba(255, 214, 116, .38), transparent 22rem),
-        radial-gradient(circle at 92% 20%, rgba(91, 161, 149, .18), transparent 25rem),
-        #f7edd7;
-    }
-
-    a { color: inherit; }
-
-    .skip-link {
-      position: absolute;
-      left: 1rem;
-      top: -5rem;
-      z-index: 10;
-      padding: .75rem 1rem;
-      border-radius: 0 0 .65rem .65rem;
-      background: var(--ink);
-      color: white;
-    }
-
-    .skip-link:focus { top: 0; }
-
-    header {
-      position: relative;
-      overflow: hidden;
-      padding: clamp(2.5rem, 7vw, 5.5rem) 1.25rem clamp(4.25rem, 8vw, 6.5rem);
-      text-align: center;
-      background: var(--teal);
-      color: white;
-    }
-
-    header::before,
-    header::after {
-      content: "";
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, .08);
-    }
-
-    header::before { width: 22rem; height: 22rem; left: -9rem; top: -12rem; }
-    header::after { width: 28rem; height: 28rem; right: -12rem; bottom: -21rem; }
-
-    .eyebrow {
-      margin: 0 0 .75rem;
-      color: #ffe09b;
-      font-size: clamp(.9rem, 2vw, 1rem);
-      font-weight: 900;
-      letter-spacing: .16em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      position: relative;
-      margin: 0 auto;
-      max-width: 15ch;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(2.7rem, 7vw, 5.7rem);
-      line-height: .96;
-      letter-spacing: -.035em;
-      text-wrap: balance;
-      text-shadow: 0 3px 0 rgba(20, 72, 69, .7);
-    }
-
-    header p:last-child {
-      position: relative;
-      max-width: 42rem;
-      margin: 1.15rem auto 0;
-      color: #e8fffb;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(1.08rem, 2.4vw, 1.35rem);
-      line-height: 1.55;
-    }
-
-    .curve {
-      position: absolute;
-      right: -2%;
-      bottom: -1px;
-      left: -2%;
-      height: 2.5rem;
-      border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-      background: #f7edd7;
-    }
-
-    main {
-      width: min(1180px, calc(100% - 2rem));
-      margin: 0 auto;
-      padding: clamp(1.5rem, 4vw, 3rem) 0 clamp(3rem, 7vw, 5rem);
-    }
-
-    .shelf-heading {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 1rem;
-      margin: 0 0 1.25rem;
-    }
-
-    h2 {
-      margin: 0;
-      color: var(--brown);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(1.75rem, 4vw, 2.6rem);
-    }
-
-    .book-count {
-      flex: 0 0 auto;
-      margin: 0 0 .25rem;
-      color: #775e4c;
-      font-size: .93rem;
-      font-weight: 800;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-
-    .shelf {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: clamp(1rem, 2.5vw, 1.7rem);
-    }
-
-    .book-card {
-      display: flex;
-      min-width: 0;
-      overflow: hidden;
-      border: 1px solid rgba(104, 70, 47, .13);
-      border-radius: 1.25rem;
-      background: var(--paper);
-      box-shadow: var(--shadow);
-      text-decoration: none;
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
-
-    .book-card:hover {
-      transform: translateY(-5px) rotate(-.25deg);
-      box-shadow: 0 20px 42px rgba(73, 46, 28, .22);
-    }
-
-    .book-card:focus-visible {
-      outline: 4px solid var(--gold);
-      outline-offset: 4px;
-    }
-
-    .card-inner { display: flex; flex: 1; flex-direction: column; }
-
-    .cover {
-      position: relative;
-      overflow: hidden;
-      aspect-ratio: 16 / 9;
-      background: #d7e5d3;
-    }
-
-    .cover img {
-      position: absolute;
-      inset: 0 auto auto 0;
-      width: 200%;
-      max-width: none;
-      height: auto;
-    }
-
-    .card-copy {
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-      padding: 1.15rem 1.2rem 1.25rem;
-    }
-
-    h3 {
-      margin: 0;
-      color: var(--red);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(1.3rem, 2.5vw, 1.7rem);
-      line-height: 1.08;
-    }
-
-    .card-copy p {
-      margin: .65rem 0 1.15rem;
-      color: #635047;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1rem;
-      line-height: 1.48;
-    }
-
-    .read {
-      display: inline-flex;
-      align-items: center;
-      gap: .45rem;
-      margin-top: auto;
-      color: var(--teal-dark);
-      font-size: .96rem;
-      font-weight: 900;
-    }
-
-    .read span {
-      display: grid;
-      width: 1.7rem;
-      height: 1.7rem;
-      place-items: center;
-      border-radius: 50%;
-      background: #dff3ee;
-      transition: transform .2s ease;
-    }
-
-    .book-card:hover .read span { transform: translateX(3px); }
-
-    footer {
-      padding: 1.5rem 1rem 2rem;
-      border-top: 2px dashed rgba(104, 70, 47, .18);
-      color: #765f50;
-      text-align: center;
-      font-family: Georgia, "Times New Roman", serif;
-    }
-
-    @media (max-width: 860px) {
-      .shelf { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-
-    @media (max-width: 560px) {
-      .shelf-heading { align-items: start; flex-direction: column; gap: .2rem; }
-      .shelf { grid-template-columns: 1fr; }
-      header { padding-top: 3rem; }
-      main { width: min(100% - 1.25rem, 34rem); }
-      .book-card:hover { transform: translateY(-3px); }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      .book-card, .read span { transition: none; }
-    }
-  </style>
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
   <a class="skip-link" href="#stories">Skip to the stories</a>
@@ -269,10 +20,21 @@
   <main id="stories">
     <div class="shelf-heading">
       <h2>Choose a story</h2>
-      <p class="book-count">6 books to read</p>
+      <p class="book-count">8 books to read</p>
     </div>
 
     <div class="shelf">
+      <a class="book-card" href="Arlo-Makes-Room/">
+        <article class="card-inner">
+          <div class="cover"><img src="Arlo-Makes-Room/00-cover.png" alt="Arlo with Gaga, Grumpy, Riley, and Ruby in a cheerful family room"></div>
+          <div class="card-copy">
+            <h3>Arlo Makes Room</h3>
+            <p>Making space for baby and learning that love grows bigger.</p>
+            <span class="read">Read this story <span aria-hidden="true">→</span></span>
+          </div>
+        </article>
+      </a>
+
       <a class="book-card" href="DogTired/">
         <article class="card-inner">
           <div class="cover"><img src="DogTired/Ruby-Riley-Story-Art.png" alt="Gaga and Arlo say goodbye to Ruby and Riley at the front door"></div>
@@ -284,16 +46,7 @@
         </article>
       </a>
 
-      <a class="book-card" href="GagaWentAway/">
-        <article class="card-inner">
-          <div class="cover"><img src="GagaWentAway/Gaga-Went-Away-Art.png" alt="Arlo arrives at Grumpy’s house as Ruby and Riley run to greet him"></div>
-          <div class="card-copy">
-            <h3>Gaga Went Away</h3>
-            <p>Missing someone, remembering her, and carrying her love.</p>
-            <span class="read">Read this story <span aria-hidden="true">→</span></span>
-          </div>
-        </article>
-      </a>
+
 
       <a class="book-card" href="GoldenEgg/">
         <article class="card-inner">
@@ -338,6 +91,40 @@
           </div>
         </article>
       </a>
+
+      <a class="book-card" href="GrumpyKeptSnoring/">
+        <article class="card-inner">
+          <div class="cover cover--three-by-three"><img src="GrumpyKeptSnoring/Grumpy-Keeps-Snoring-Art.png" alt="Grumpy rests in his chair while Gaga and Arlo listen nearby"></div>
+          <div class="card-copy">
+            <h3>Grumpy Keeps Snoring</h3>
+            <p>Mysterious noises, a curious boy, and one Grumpy who absolutely does not snore.</p>
+            <span class="read">Read this story <span aria-hidden="true">→</span></span>
+          </div>
+        </article>
+      </a>
+
+      <a class="book-card" href="GrumpyLand-and-the-Bridge/">
+        <article class="card-inner">
+          <div class="cover"><img src="GrumpyLand-and-the-Bridge/images/00-cover.png" alt="Grumpy, Arlo, Ruby, and Riley look over GrumpyLand and the river, gate, and bridges"></div>
+          <div class="card-copy">
+            <h3>The Bridge Across GrumpyLand</h3>
+            <p>Sometimes a gate is more than wood and chain.</p>
+            <span class="read">Read this story <span aria-hidden="true">→</span></span>
+          </div>
+        </article>
+      </a>
+
+      <!-- <a class="book-card d-none" href="GagaWentAway/">
+        <article class="card-inner">
+          <div class="cover"><img src="GagaWentAway/Gaga-Went-Away-Art.png" alt="Arlo arrives at Grumpy’s house as Ruby and Riley run to greet him"></div>
+          <div class="card-copy">
+            <h3>Gaga Went Away</h3>
+            <p>Missing someone, remembering her, and carrying her love.</p>
+            <span class="read">Read this story <span aria-hidden="true">→</span></span>
+          </div>
+        </article>
+      </a> -->
+
     </div>
   </main>
 
