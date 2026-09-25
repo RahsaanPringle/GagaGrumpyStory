@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>The Bridge Across GrumpyLand</title>
-  <link rel="stylesheet" href="../site-nav.css">
+  <link rel="stylesheet" href="../assets/styles/site-nav.css">
   <style>
     :root{--ink:#253126;--cream:#fff9e9;--green:#315c36;--gold:#f6b73c;--panel:rgba(255,249,233,.96)}
     *{box-sizing:border-box}html,body{height:100%;margin:0}body{display:flex;flex-direction:column;overflow:hidden;background:#dcebcf;color:var(--ink);font-family:"Trebuchet MS",Arial,sans-serif}
@@ -36,6 +36,6 @@
   prev.onclick=()=>show(i-1);next.onclick=()=>show(i+1);addEventListener('keydown',e=>{if(e.key==='ArrowLeft')show(i-1);if(e.key==='ArrowRight'||e.key===' ')show(i+1)});
   addEventListener('touchstart',e=>startX=e.changedTouches[0].screenX,{passive:true});addEventListener('touchend',e=>{const d=e.changedTouches[0].screenX-startX;if(Math.abs(d)>50)show(i+(d<0?1:-1))},{passive:true});show(0);
 </script>
-<script src="../site-nav.js" defer></script>
+<script src="../assets/scripts/site-nav.js" defer></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Grumpy Keeps Snoring</title>
-  <link rel="stylesheet" href="../site-nav.css">
+  <link rel="stylesheet" href="../assets/styles/site-nav.css">
   <style>
     :root{--cream:#fff8e8;--paper:#fffdf7;--gold:#f5c65b;--teal:#187b7a;--red:#d65345;--ink:#332d2a;--muted:#71645d}
     *{box-sizing:border-box} body{margin:0;background:linear-gradient(135deg,#f6d88a,#f2a86f);color:var(--ink);font-family:Georgia,"Times New Roman",serif;min-height:100vh}
@@ -51,7 +51,7 @@
     <button class="read-all-toggle" type="button">Read all pages</button>
     <footer>For Arlo—with love from Grumpy and Gaga.</footer>
   </main>
-  <script src="../site-nav.js" defer></script>
+  <script src="../assets/scripts/site-nav.js" defer></script>
   <script>
     const pages=[...document.querySelectorAll('.page')],back=document.querySelector('.back'),next=document.querySelector('.next'),count=document.querySelector('.count'),toggle=document.querySelector('.read-all-toggle');let current=0;
     function show(n){current=Math.max(0,Math.min(n,pages.length-1));pages.forEach((p,i)=>p.classList.toggle('active',i===current));count.textContent=`Page ${current+1} of ${pages.length}`;back.disabled=current===0;next.disabled=current===pages.length-1;window.scrollTo({top:0,behavior:'smooth'})}
