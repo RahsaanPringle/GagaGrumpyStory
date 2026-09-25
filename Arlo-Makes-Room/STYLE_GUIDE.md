@@ -8,6 +8,7 @@
 - **Color:** bright warm pastels, especially sky blue, cream, coral, orange, and olive green
 - **Lighting:** high-key daylight and warm indoor ambient light; very soft shadows
 - **Characters:** rounded cartoon proportions, large expressive eyes, simple readable expressions
+- **Arlo's approximate age:** about 5 years old; an independent preschooler preparing to become a big brother
 - **Backgrounds:** simplified, airy domestic interiors with broad watercolor shapes
 - **Composition:** one clear emotional beat per image; characters grouped tightly and readable at thumbnail size
 - **Mood:** safe, affectionate, optimistic, and gently humorous
@@ -16,7 +17,7 @@
 
 Use this story as the main series style: polished watercolor-and-ink illustration with clean outlines, soft pigment texture, warm natural light, and friendly cartoon proportions. Match characters to `../Characters/` and geography to `../Scenes/Terrain-Storybook.png`. Riley is the larger dog with the green collar; Ruby is the smaller dog with the red collar.
 
-Keep Arlo's striped shirt, Gaga's cream cardigan and blue shirt, Grumpy's orange sweater, and Mama Murdle's coral dress consistent with their character files. Use 16:9 landscape scenes unless a page layout calls for another crop.
+Draw Arlo at about age 5: roughly waist-high beside the adults, with preschool proportions, confident movement, and a still-youthful round face. Keep his striped shirt, Gaga's cream cardigan and blue shirt, Grumpy's orange sweater, and Mama Murdle's coral dress consistent with their character files. Use 16:9 landscape scenes unless a page layout calls for another crop.
 
 ## Avoid
 
