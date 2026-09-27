@@ -2,23 +2,24 @@
 
 ## Current artwork
 
-- **Style family:** near-photoreal painterly illustration
-- **Medium:** digital oil/gouache rendering with realistic skin, fabric, fur, and room textures
-- **Linework:** little or no visible outline; forms are modeled through light and shadow
-- **Color:** warm sepia, navy, charcoal, mustard, and soft window light
-- **Lighting:** cinematic indoor daylight with broad soft shadows and amber warmth
-- **Characters:** realistic proportions with slightly enlarged expressions for humor
+- **Reference guide:** inherit the series style from `../Arlo-Makes-Room/STYLE_GUIDE.md`
+- **Style family:** comic watercolor picture book
+- **Medium:** flat digital color with soft watercolor washes and paper-like texture
+- **Linework:** bold, smooth black outlines around characters; lighter painted edges in backgrounds
+- **Color:** bright warm pastels, especially cream, blue, mustard, coral, orange, and olive green
+- **Lighting:** high-key warm indoor ambient light with very soft shadows
+- **Characters:** rounded cartoon proportions, large expressive eyes, and simple readable reactions
 - **Arlo's approximate age:** about 3 years old; a highly mobile toddler or young preschooler who investigates sounds through play
-- **Backgrounds:** detailed lived-in room, curtains, furniture, rug, and window view
+- **Backgrounds:** simplified, airy domestic interiors with broad watercolor shapes, curtains, furniture, rug, and window view
 - **Composition:** nine square panels in a 3-by-3 sprite sheet; close and medium shots dominate
 - **Mood:** cozy, observational, mischievous, and affectionate
 
 ## Direction for new artwork
 
-Bring future additions into the shared watercolor-and-ink series style using `../Characters/` as the identity source. Draw Arlo at about age 3 with toddler-preschool proportions, short legs, a large head, soft round features, and curious physical movement. Preserve the warm interior lighting, close family staging, and comic reaction shots. Simplify fabric, fur, and skin detail enough to match the rest of the series.
+Follow `../Arlo-Makes-Room/STYLE_GUIDE.md` for the shared watercolor-and-ink series treatment, using `../Characters/` as the identity source. Draw Arlo at about age 3 with toddler-preschool proportions, short legs, a large head, soft round features, and curious physical movement. Preserve the warm interior lighting, close family staging, and comic reaction shots.
 
 If extending the existing sprite sheet, use nine equal square panels in a 3-by-3 grid. Keep sound effects short, white, and hand-lettered only when they are part of the illustration.
 
 ## Avoid
 
-Strict photorealism, photographic depth of field, uncanny faces, harsh flash lighting, dark horror-like shadows, glossy 3D rendering, inconsistent ages, and changing the dogs' German Shepherd markings or collar colors.
+Photorealism, photographic depth of field, oil-paint realism, uncanny faces, harsh flash lighting, dark horror-like shadows, glossy 3D rendering, hard cel shading, inconsistent ages, and changing the dogs' German Shepherd markings or collar colors.

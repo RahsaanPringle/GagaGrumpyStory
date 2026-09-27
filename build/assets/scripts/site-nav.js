@@ -3,6 +3,7 @@
   if (!navigation) return;
 
   const stories = [
+    ['grumpy-finds-a-baby', 'Grumpy Finds a Baby', 'GrumpyFindsABaby/'],
     ['arlo-makes-room', 'Arlo Makes Room', 'Arlo-Makes-Room/'],
     ['dog-tired', 'Dog-Tired Day', 'DogTired/'],
     ['golden-egg', 'Goldie’s Egg', 'GoldenEgg/'],
@@ -14,7 +15,7 @@
   ];
 
   const scriptUrl = document.currentScript?.src;
-  const siteRoot = scriptUrl ? new URL('.', scriptUrl) : new URL('../', window.location.href);
+  const siteRoot = scriptUrl ? new URL('../../', scriptUrl) : new URL('../', window.location.href);
 
   const inner = document.createElement('div');
   inner.className = 'site-nav__inner';

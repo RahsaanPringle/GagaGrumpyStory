@@ -12,7 +12,7 @@
 - **Backgrounds:** expansive rural landscapes with detailed water, bridges, flowers, gates, stonework, and distant hills
 - **Composition:** separate 16:9 landscape images; wide establishing shots mixed with action-focused scenes
 - **Mood:** adventurous, energetic, humorous, and instructive
-- **Continuity note:** the existing images vary in character appearance and dog breed; treat them as scene references rather than identity references.
+- **Continuity note:** the corrected image set uses the canonical character designs throughout: Grumpy in orange and olive, six-year-old Arlo in his striped shirt, Ruby with a red collar, Riley with a green collar, and Bob in teal cycling clothes with a yellow helmet.
 
 ## Direction for new artwork
 
