@@ -4,7 +4,7 @@
 
   const stories = [
     ['grumpy-finds-a-baby', 'Grumpy Finds a Baby', 'GrumpyFindsABaby/'],
-    ['arlo-makes-room', 'Arlo Makes Room', 'Arlo-Makes-Room/'],
+    ['milo-makes-room', 'Milo Makes Room', 'Milo-Makes-Room/'],
     ['dog-tired', 'Dog-Tired Day', 'DogTired/'],
     ['golden-egg', 'Goldie’s Egg', 'GoldenEgg/'],
     ['hungry-bird', 'Hungry Chickens', 'HungryBird/'],

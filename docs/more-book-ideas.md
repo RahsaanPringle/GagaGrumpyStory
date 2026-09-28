@@ -14,7 +14,7 @@ Title: Grumpy's Very Loud Garden
 Theme: Grumpy tries to grow vegetables, but the garden is way more chaotic than he expected.
 
 Story beats:
-- Arlo wants to help plant a garden.
+- Milo wants to help plant a garden.
 - Grumpy is determined to grow the biggest tomatoes in the county.
 - Ruby and Riley chase the garden hose, the watering can, and a very dramatic chicken.
 - The garden gets loud, muddy, and full of surprises.
@@ -31,7 +31,7 @@ Title: The Great Blanket Fort
 Theme: The family builds a fort and accidentally turns the whole living room into a kingdom.
 
 Story beats:
-- Arlo wants a fort, a castle, a cave, and a pirate ship all at once.
+- Milo wants a fort, a castle, a cave, and a pirate ship all at once.
 - Gaga hangs blankets. Grumpy knocks over a chair. Ruby and Riley become the official fort inspectors.
 - The fort is full of pillows, blankets, and one suspiciously large teddy bear.
 - Everyone gets comfy inside, where monsters are really just socks and dust bunnies.
@@ -51,7 +51,7 @@ Story beats:
 - Ruby cannot find her squeaky bone.
 - Riley is sure it is under the couch, in the garden, behind the fridge, or in the biggest shoe in the house.
 - The house gets more and more mysterious as they search.
-- Arlo finds a tiny squeak hidden in a blanket, then the bone is discovered in the middle of a pillow pile.
+- Milo finds a tiny squeak hidden in a blanket, then the bone is discovered in the middle of a pillow pile.
 - Everyone celebrates with a ridiculous happy dance.
 
 Why it works for age 4:
@@ -66,7 +66,7 @@ Theme: A rainy day feels gloomy until the family turns it into a grand adventure
 
 Story beats:
 - It is raining so hard that the puddles look like tiny lakes.
-- Arlo wants to be sad about the weather, but Ruby and Riley think the rain is the best game ever.
+- Milo wants to be sad about the weather, but Ruby and Riley think the rain is the best game ever.
 - Grumpy complains that rain is wet and slippery, then he ends up splashing through puddles anyway.
 - Gaga makes a cozy rainy-day fort and serves warm soup and toast.
 - By the end, the rain is still falling, but the whole family is glowing and content.
@@ -76,17 +76,17 @@ Why it works for age 4:
 - a gentle emotional arc from gloomy to cozy
 - good for repetitive sound language: drip, splash, patter, plop
 
-## 5. Arlo's Very Big Worm
-Title: Arlo's Very Big Worm
+## 5. Milo's Very Big Worm
+Title: Milo's Very Big Worm
 
-Theme: Arlo thinks a worm is huge, scary, and maybe the greatest creature ever discovered.
+Theme: Milo thinks a worm is huge, scary, and maybe the greatest creature ever discovered.
 
 Story beats:
-- Arlo finds a worm in the garden.
+- Milo finds a worm in the garden.
 - It is not scary at all, but it is wiggly and weird and very exciting.
 - Ruby and Riley are convinced it is a new kind of monster.
 - Grumpy says it is just a worm, but he still watches it with a very serious face.
-- Arlo learns that tiny creatures can still be marvelous.
+- Milo learns that tiny creatures can still be marvelous.
 
 Why it works for age 4:
 - a perfect age-appropriate “small-world wonder” story
@@ -100,7 +100,7 @@ Theme: The family has a picnic at night and discovers the moon makes everything 
 
 Story beats:
 - Gaga says a picnic is for daylight, but Grumpy insists a moonlight picnic is more serious than a daytime one.
-- Arlo brings a blanket, a tiny sandwich, and one extremely hopeful cookie.
+- Milo brings a blanket, a tiny sandwich, and one extremely hopeful cookie.
 - Ruby and Riley sniff the air and decide the moon is a giant round ball that should absolutely be investigated.
 - They sit outside under the stars, share snacks, and listen to the nighttime sounds.
 - The story ends with everyone yawning and drifting to sleep under the sky.
@@ -117,7 +117,7 @@ Theme: Breakfast turns into a delicious adventure when everyone gets involved.
 
 Story beats:
 - Gaga is making pancakes, and the whole kitchen smells warm and sweet.
-- Arlo wants to help stir, pour, and sprinkle.
+- Milo wants to help stir, pour, and sprinkle.
 - Ruby and Riley believe that pancake batter is a very interesting mystery substance.
 - Grumpy is certain the kitchen is chaos, but he still takes the first bite.
 - The family sits together to eat, laughing, sticky, and very happy.
@@ -133,7 +133,7 @@ Title: The Great Backyard Treasure Hunt
 Theme: The family hides “treasures” around the yard and learns that joyful surprises are often the best kind.
 
 Story beats:
-- Arlo decides the yard needs a treasure map.
+- Milo decides the yard needs a treasure map.
 - Gaga hides a toy, a leaf, a painted rock, and a cookie under a flowerpot.
 - Ruby and Riley sniff out clues with full seriousness.
 - Grumpy pretends he is not excited, but his beard does a very revealing wiggle.
@@ -150,7 +150,7 @@ Title: The Sleepy Sunflower
 Theme: A sunflower is the tallest, happiest, and most dramatic flower in the yard.
 
 Story beats:
-- Arlo notices a sunflower leaning toward the sun.
+- Milo notices a sunflower leaning toward the sun.
 - Ruby and Riley decide the flower must be saying hello.
 - Grumpy says a sunflower is just a flower, but he is clearly impressed.
 - The flower keeps turning to follow the sun, and the whole family watches it like it is a very important star.
@@ -168,9 +168,9 @@ Theme: Grumpy tries to keep the picnic neat and perfect, but the family makes it
 
 Story beats:
 - Grumpy sets up a picnic on the porch with perfect little sandwiches and a very serious expression.
-- Arlo spills crumbs. Ruby steals a napkin. Riley drops a stick on the blanket.
+- Milo spills crumbs. Ruby steals a napkin. Riley drops a stick on the blanket.
 - The picnic becomes wonderfully messy and hilarious.
-- Gaga laughs. Arlo giggles. Ruby and Riley chase the breeze.
+- Gaga laughs. Milo giggles. Ruby and Riley chase the breeze.
 - Grumpy decides the best picnic is not the quietest one—it is the one where everyone is happy.
 
 Why it works for age 4:
@@ -184,7 +184,7 @@ Title: The Cozy Cave
 Theme: The family turns a pile of blankets into a tiny cave of wonder and comfort.
 
 Story beats:
-- Arlo announces he needs a cave to think.
+- Milo announces he needs a cave to think.
 - Gaga builds a cave. Grumpy adds a cushion. Ruby and Riley choose the best blanket.
 - Inside the cave are little adventures: treasure maps, whispered stories, and a tiny hidden snack.
 - The cave is so cozy that everyone wants to stay there forever.
@@ -195,17 +195,17 @@ Why it works for age 4:
 - built around comfort, quiet, and small rituals
 - very easy to make visually rich and emotionally warm
 
-## 12. Arlo's First Little Helper
-Title: Arlo's First Little Helper
+## 12. Milo's First Little Helper
+Title: Milo's First Little Helper
 
-Theme: Arlo wants to help with something important and discovers that being helpful can be small and sweet.
+Theme: Milo wants to help with something important and discovers that being helpful can be small and sweet.
 
 Story beats:
-- Gaga asks Arlo to help with a very important job.
-- Arlo feels grown-up and very serious.
+- Gaga asks Milo to help with a very important job.
+- Milo feels grown-up and very serious.
 - He carries napkins, feeds the dogs, picks flowers, or puts toys away in a very earnest way.
 - He makes a tiny mistake and the family laughs kindly.
-- The task gets done, and Arlo learns that being helpful means being present, not being perfect.
+- The task gets done, and Milo learns that being helpful means being present, not being perfect.
 
 Why it works for age 4:
 - age-appropriate self-esteem story

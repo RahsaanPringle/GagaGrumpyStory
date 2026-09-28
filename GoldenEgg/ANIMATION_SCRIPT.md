@@ -4,7 +4,7 @@
 
 - **Format:** 16:9, 1920×1080, 24 fps
 - **Estimated runtime:** 85–100 seconds
-- **Visual direction:** Follow `STYLE_GUIDE.md`; use canonical Goldie, Riley, Ruby, Gaga, and one-year-old Arlo.
+- **Visual direction:** Follow `STYLE_GUIDE.md`; use canonical Goldie, Riley, Ruby, Gaga, and one-year-old Milo.
 - **Animation approach:** Bright watercolor-and-ink animation with readable animal acting, lively but safe chase motion, and restrained background parallax.
 - **Audio:** Warm narrator, playful acoustic score, chicken clucks, paw beats, and clear Spanish pronunciation.
 - **Transitions:** Quick action wipes during the chase; soft dissolves during the lesson and ending.
@@ -63,8 +63,8 @@
 
 - **Duration:** 18 seconds
 - **Narration:** “Ruby gave Goldie the gentlest sniff. ‘Amiga,’ she repeated. From then on, Ruby rested beside the chickens instead of chasing them. She had gained five friends—and one new Spanish word.”
-- **Picture:** Ruby, Riley, Goldie, the flock, Gaga, and baby Arlo relax together.
-- **Motion:** Ruby sniffs gently; Goldie clucks; Riley watches with one eye open; Gaga shows the egg to Arlo.
+- **Picture:** Ruby, Riley, Goldie, the flock, Gaga, and baby Milo relax together.
+- **Motion:** Ruby sniffs gently; Goldie clucks; Riley watches with one eye open; Gaga shows the egg to Milo.
 - **Camera:** Start close on Ruby and Goldie, then pull back to the peaceful group.
 - **Sound:** Contented clucks, breeze, warm musical resolution.
 - **Transition:** Fade to sunny cream.

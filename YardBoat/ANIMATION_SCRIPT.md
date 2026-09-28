@@ -4,7 +4,7 @@
 
 - **Format:** 16:9, 1920×1080, 24 fps
 - **Estimated runtime:** 85–100 seconds
-- **Visual direction:** Follow `STYLE_GUIDE.md`; use canonical characters and keep Arlo about 4 years old. Keep the boat's faded blue-and-white design consistent.
+- **Visual direction:** Follow `STYLE_GUIDE.md`; use canonical characters and keep Milo about 4 years old. Keep the boat's faded blue-and-white design consistent.
 - **Animation approach:** Relaxed watercolor-and-ink animation with comic mechanical motion, gentle outdoor parallax, and safe, readable staging.
 - **Audio:** Warm narrator, rustic acoustic score, birds, motor coughs, water, and restrained comic accents.
 - **Transitions:** Soft dissolves in the yard; watery ripples for lake memories.
@@ -12,9 +12,9 @@
 ## Scene 1 — The boat that never boated
 
 - **Duration:** 14 seconds
-- **Narration:** “Grumpy had a boat. It sat beneath the old shade tree day after day. It never splashed, zoomed, or even wiggled. ‘Why is the boat always snoozing?’ Arlo asked.”
-- **Picture:** The weathered boat rests on its trailer while Grumpy, Arlo, Riley, and Ruby look at it.
-- **Motion:** Leaves sway, a “Z” drifts above the boat, Arlo points, and the dogs tilt their heads.
+- **Narration:** “Grumpy had a boat. It sat beneath the old shade tree day after day. It never splashed, zoomed, or even wiggled. ‘Why is the boat always snoozing?’ Milo asked.”
+- **Picture:** The weathered boat rests on its trailer while Grumpy, Milo, Riley, and Ruby look at it.
+- **Motion:** Leaves sway, a “Z” drifts above the boat, Milo points, and the dogs tilt their heads.
 - **Camera:** Slow reveal from shade tree to the full boat and family.
 - **Sound:** Birds, breeze, comic “zzzzzz.”
 - **Transition:** Dissolve to Grumpy sitting beside the trailer.
@@ -23,7 +23,7 @@
 
 - **Duration:** 13 seconds
 - **Narration:** “‘A good boat starts when you ask, carries you across the water, and brings you home,’ Grumpy said. ‘But this boat is a great big floating bucket of bolts.’”
-- **Picture:** Grumpy explains while Arlo and the dogs listen.
+- **Picture:** Grumpy explains while Milo and the dogs listen.
 - **Motion:** Grumpy rubs his beard and counts points on his fingers; Ruby's ears rise; Riley tilts her head.
 - **Camera:** Medium conversational shot with a slow move toward the rusty motor.
 - **Sound:** Light metallic rattle and a comic bass note.
@@ -52,18 +52,18 @@
 ## Scene 5 — A lemon of a boat
 
 - **Duration:** 14 seconds
-- **Narration:** “‘Some boats are speedy. Some boats are strong. This boat is a lemon.’ Arlo giggled. Ruby and Riley sniffed the lemon and decided it was not a ball.”
+- **Narration:** “‘Some boats are speedy. Some boats are strong. This boat is a lemon.’ Milo giggled. Ruby and Riley sniffed the lemon and decided it was not a ball.”
 - **Picture:** Grumpy holds up a bright lemon beside the boat.
-- **Motion:** He presents it seriously; Arlo laughs; both dogs sniff, pause, and turn away together.
+- **Motion:** He presents it seriously; Milo laughs; both dogs sniff, pause, and turn away together.
 - **Camera:** Medium group shot with a quick insert of the lemon.
-- **Sound:** Small comic chime and Arlo's laugh.
+- **Sound:** Small comic chime and Milo's laugh.
 - **Transition:** Lemon yellow warms into late-afternoon sunlight.
 
 ## Scene 6 — The best yard boat
 
 - **Duration:** 18 seconds
-- **Narration:** “‘Maybe it likes being a yard boat,’ Arlo said. It was terrible at boating—but excellent at sitting quietly in the shade. And the yard boat showed everyone what it did best.”
-- **Picture:** Grumpy and Gaga rest in chairs; Gaga cuddles Arlo; the dogs sleep in the grass beside the boat.
+- **Narration:** “‘Maybe it likes being a yard boat,’ Milo said. It was terrible at boating—but excellent at sitting quietly in the shade. And the yard boat showed everyone what it did best.”
+- **Picture:** Grumpy and Gaga rest in chairs; Gaga cuddles Milo; the dogs sleep in the grass beside the boat.
 - **Motion:** Everyone settles, eyelids close, leaves sway, and a few “Z” shapes drift upward.
 - **Camera:** Slow pullback to include family, boat, tree, and yard.
 - **Sound:** Breeze, soft snores, restful musical ending.

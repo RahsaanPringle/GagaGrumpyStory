@@ -4,7 +4,7 @@
 
 - **Format:** 16:9, 1920×1080, 24 fps
 - **Estimated runtime:** 85–105 seconds
-- **Visual direction:** Follow `STYLE_GUIDE.md`; use canonical characters and keep Arlo about 1 year old.
+- **Visual direction:** Follow `STYLE_GUIDE.md`; use canonical characters and keep Milo about 1 year old.
 - **Animation approach:** Colorful watercolor-and-ink motion with clear garden geography, gentle flock movement, and readable educational beats.
 - **Audio:** Warm narrator, light acoustic music, garden ambience, chicken sounds, and careful Spanish pronunciation.
 - **Transitions:** Leaf wipes, garden-object match cuts, and soft dissolves.
@@ -63,8 +63,8 @@
 
 - **Duration:** 18 seconds
 - **Narration:** “The chickens found insects in the yard. Gaga’s vegetables stayed safe behind the gate. ‘¡Gracias, amigas!’ Goldie clucked. The chickens had their insectos, Gaga had her jardín, and Ruby and Riley had done a very good job.”
-- **Picture:** Chickens forage by the log; Gaga shows the garden to baby Arlo; the dogs rest nearby.
-- **Motion:** Calm scratching, Riley and Ruby settle side by side, Gaga points out a tomato to Arlo.
+- **Picture:** Chickens forage by the log; Gaga shows the garden to baby Milo; the dogs rest nearby.
+- **Motion:** Calm scratching, Riley and Ruby settle side by side, Gaga points out a tomato to Milo.
 - **Camera:** Slow lateral move connecting yard, gate, garden, and family.
 - **Sound:** Gentle clucks, breeze, warm closing music.
 - **Transition:** Fade to pale garden green.
