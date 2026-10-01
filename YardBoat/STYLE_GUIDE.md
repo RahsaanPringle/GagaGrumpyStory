@@ -10,14 +10,14 @@
 - **Characters:** friendly cartoon realism with exaggerated expressions for comic timing
 - **Milo's approximate age:** about 4 years old; a curious preschooler who asks questions and invents imaginative explanations
 - **Backgrounds:** yard, shade tree, fence, lake, and shoreline with moderate environmental detail
-- **Composition:** six 16:9 panels in a 2-by-3 sprite sheet; the old blue-and-white boat remains the dominant prop
+- **Composition:** six individual landscape illustrations; the old blue-and-white boat remains the dominant prop
 - **Mood:** dryly funny, relaxed, affectionate, and slightly nostalgic
 
 ## Direction for new artwork
 
 Use the canonical character designs in `../Characters/` and the shared watercolor-and-ink finish. Draw Milo at about age 4 with short preschool proportions, lively gestures, and a round youthful face. Keep the boat visibly old: faded blue stripe, off-white hull, small rust patches, gray outboard motor, and trailer. Place yard scenes within the geography suggested by `../Scenes/Terrain-Storybook.png`.
 
-Keep Riley larger with a green collar and Ruby smaller with a red collar. For sprite sheets, use equal 16:9 panels in a 2-by-3 grid.
+Keep Riley larger with a green collar and Ruby smaller with a red collar. Create each story scene as its own landscape image.
 
 ## Avoid
 

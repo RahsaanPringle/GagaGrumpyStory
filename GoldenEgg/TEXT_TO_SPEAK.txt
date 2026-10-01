@@ -1,0 +1,29 @@
+# Ruby, Riley & Goldie's Egg — Narration by Panel
+
+## Panel 1 — `images/page-01.png`
+
+Every morning, Gaga carried feed to her chickens. Riley, fully grown and two years old, sat quietly beside her. Ruby was only nine months old—smaller than Riley and full of wiggles.
+
+## Panel 2 — `images/page-02.png`
+
+One hen hopped left. Another flapped right. Gaga called for Ruby to wait, but Ruby was already running. Zoom! Flap! Cluck-cluck-cluck!
+
+## Panel 3 — `images/page-03.png`
+
+The chickens ran from Ruby. Ruby ran after the chickens. And Riley ran after Ruby. Riley was bigger, older, and faster. She knew where Ruby was going before Ruby did.
+
+## Panel 4 — `images/page-04.png`
+
+Riley hurried ahead and stood between Ruby and the frightened flock. She explained that Gaga’s chickens were family. Friends watch over one another. They do not chase.
+
+Ruby looked at the chickens and lowered her ears. She had thought they were playing, but now she understood.
+
+## Panel 5 — `images/page-05.png`
+
+Then Goldie stepped forward and settled a warm brown egg into her nest. Her message was simple: “¡Amiga!” Amiga means a female friend in Spanish.
+
+## Panel 6 — `images/page-06.png`
+
+Ruby gave Goldie her gentlest sniff. “Amiga,” she repeated.
+
+From then on, Ruby rested beside the chickens instead of chasing them. She had gained five new friends—and one new Spanish word.

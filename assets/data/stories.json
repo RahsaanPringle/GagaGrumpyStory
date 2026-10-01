@@ -1,0 +1,104 @@
+{
+  "stories": [
+    {
+      "id": "grumpy-finds-a-baby",
+      "approximateAge": "newborn",
+      "navLabel": "Grumpy Finds a Baby",
+      "title": "Grumpy Finds a Baby",
+      "href": "GrumpyFindsABaby/",
+      "cover": "GrumpyFindsABaby/images/00-cover.png",
+      "alt": "Grumpy holds tiny baby Milo close in the warm family kitchen",
+      "description": "Ten tiny fingers, ten tiny toes, and the day Milo found his Grumpy."
+    },
+    {
+      "id": "dog-tired",
+      "approximateAge": "1 year",
+      "navLabel": "Dog-Tired Day",
+      "title": "Ruby & Riley’s Dog-Tired Day",
+      "href": "DogTired/",
+      "cover": "DogTired/images/page-01.png",
+      "alt": "Gaga and Milo say goodbye to Ruby and Riley at the front door",
+      "description": "Missing someone, making your own fun, and one very sleepy family."
+    },
+    {
+      "id": "golden-egg",
+      "approximateAge": "1 year",
+      "navLabel": "Goldie’s Egg",
+      "title": "Ruby, Riley & Goldie’s Egg",
+      "href": "GoldenEgg/",
+      "cover": "GoldenEgg/images/page-01.png",
+      "alt": "Gaga, Ruby, and Riley visit the chickens in the sunny backyard",
+      "description": "Listening, friendship, and one very special Spanish word."
+    },
+    {
+      "id": "hungry-bird",
+      "approximateAge": "1 year",
+      "navLabel": "Hungry Chickens",
+      "title": "Ruby, Riley & the Hungry Chickens",
+      "href": "HungryBird/",
+      "cover": "HungryBird/images/page-01.png",
+      "alt": "Gaga finds the chickens pecking in her vegetable garden with Ruby and Riley nearby",
+      "description": "Hungry hens, helpful dogs, and bugs in the right place."
+    },
+    {
+      "id": "grumpy-keeps-snoring",
+      "approximateAge": "3 years",
+      "navLabel": "Grumpy Keeps Snoring",
+      "title": "Grumpy Keeps Snoring",
+      "href": "GrumpyKeptSnoring/",
+      "cover": "GrumpyKeptSnoring/images/page-01.png",
+      "alt": "Grumpy rests in his chair while Gaga and Milo listen nearby",
+      "description": "Mysterious noises, a curious boy, and one Grumpy who absolutely does not snore."
+    },
+    {
+      "id": "nose-work",
+      "approximateAge": "4 years",
+      "navLabel": "Scent of Home",
+      "title": "Ruby, Riley & the Scent of Home",
+      "href": "NoseWork/",
+      "cover": "NoseWork/images/page-01.png",
+      "alt": "The family gathers in the backyard as Milo carries treats for Ruby and Riley",
+      "description": "Finding family and knowing exactly where you belong."
+    },
+    {
+      "id": "yard-boat",
+      "approximateAge": "4 years",
+      "navLabel": "Yard Boat",
+      "title": "Grumpy’s Yard Boat",
+      "href": "YardBoat/",
+      "cover": "YardBoat/images/page-01.png",
+      "alt": "Grumpy, Milo, Ruby, and Riley inspect an old blue boat in the yard",
+      "description": "A boat that was much better at resting than boating."
+    },
+    {
+      "id": "milo-makes-room",
+      "approximateAge": "5 years",
+      "navLabel": "Milo Makes Room",
+      "title": "Milo Makes Room",
+      "href": "Milo-Makes-Room/",
+      "cover": "Milo-Makes-Room/00-cover.png",
+      "alt": "Milo with Gaga, Grumpy, Riley, and Ruby in a cheerful family room",
+      "description": "Making space for baby and learning that love grows bigger."
+    },
+    {
+      "id": "grumpyland-and-the-bridge",
+      "approximateAge": "6 years",
+      "navLabel": "GrumpyLand Bridge",
+      "title": "The Bridge Across GrumpyLand",
+      "href": "GrumpyLand-and-the-Bridge/",
+      "cover": "GrumpyLand-and-the-Bridge/images/00-cover-corrected.png",
+      "alt": "Grumpy, Milo, Ruby, and Riley look over GrumpyLand and the river, gate, and bridges",
+      "description": "Sometimes a gate is more than wood and chain."
+    },
+    {
+      "id": "gaga-went-away",
+      "approximateAge": "5 years; intentionally last",
+      "navLabel": "Gaga Went Away",
+      "title": "Gaga Went Away",
+      "href": "GagaWentAway/",
+      "cover": "GagaWentAway/images/page-01.png",
+      "alt": "Milo arrives at Grumpy’s house as Ruby and Riley run to greet him",
+      "description": "Missing someone, remembering her, and carrying her love."
+    }
+  ]
+}

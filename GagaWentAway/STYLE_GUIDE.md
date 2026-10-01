@@ -10,14 +10,14 @@
 - **Characters:** semi-realistic forms with expressive, readable faces and restrained gestures
 - **Milo's approximate age:** about 5 years old; old enough to ask direct questions while still needing simple, concrete explanations
 - **Backgrounds:** familiar home and garden spaces rendered with quiet detail
-- **Composition:** six 16:9 panels in a 2-by-3 sprite sheet; intimate eye-level framing
+- **Composition:** six individual landscape illustrations; intimate eye-level framing
 - **Mood:** tender, honest, calm, comforting, and reflective
 
 ## Direction for new artwork
 
 Use the shared watercolor-and-ink character system from `../Characters/`, with softer outlines and a more muted palette than the lighter stories. Draw Milo at about age 5 with preschool proportions, independent movement, and emotionally clear but restrained expressions. Preserve warm skin tones, gentle expressions, and quiet compositions. Use flowers, the family album, and evening light as recurring visual anchors without making scenes gloomy or frightening.
 
-Follow the setting relationships in `../Scenes/Terrain-Storybook.png`. For sprite sheets, use equal 16:9 panels in a 2-by-3 grid.
+Follow the setting relationships in `../Scenes/Terrain-Storybook.png`. Create each story scene as its own landscape image.
 
 ## Avoid
 
