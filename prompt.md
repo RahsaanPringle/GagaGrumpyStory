@@ -1,3 +1,1 @@
-We're buildig out a set of childrens' books (Age 4), and I want more ideas.
-
-Look at the books that we have created so far, and give me a Markdown document with more ideas.
+OK, this is good. We're ready to start animating 'GrumpyLand-and-the-Bridge' now. We're doing the animations with a narrator instead of having the characters voice their own words. Let's get a Text to speak script for that one.
