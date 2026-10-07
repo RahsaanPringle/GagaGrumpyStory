@@ -1,1 +1,7 @@
-OK, this is good. We're ready to start animating 'GrumpyLand-and-the-Bridge' now. We're doing the animations with a narrator instead of having the characters voice their own words. Let's get a Text to speak script for that one.
+I want you to look at the items in 'DogTired'. There is a natural progression there.
+
+It starts with a script, we develop the flip-book, turn the flip-book into a static animation, and turn that static animation into a lightly animated video.
+
+I want to streamline the process moving forward.
+
+Maybe you can give me a prompt that I can use in the future.
